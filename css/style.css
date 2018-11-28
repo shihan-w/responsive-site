@@ -1,0 +1,221 @@
+@charset "UTF-8";
+@import 'https://fonts.googleapis.com/css?family=Mali';
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    letter-spacing: .1em;
+    color: #f8f4e6;
+    background-color: #5b7e91;
+}
+
+a
+{
+    text-decoration: none;
+
+    color: #f6bfbc;
+}
+a:visited
+{
+    color: #f09199;
+}
+a:hover
+{
+    color: #f09199;
+}
+a:active
+{
+    color: #f6bfbc;
+}
+a:hover
+{
+    text-decoration: underline;
+}
+
+.text-center
+{
+    text-align: center;
+}
+
+/* Layout
+------------------------------------------------------------*/
+.block-center, section .container, #skills i {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* Font
+------------------------------------------------------------*/
+.mali, section h2, #skills h3, #works .works-box a .works-box-inner .button-readmore {
+  font-family: 'Mali', sans-serif; }
+
+.uppercase, section h2, #skills h3, #works .works-box a .works-box-inner .button-readmore {
+  text-transform: uppercase; }
+  
+/* Header
+------------------------------------------------------------*/
+.box {
+  background-image: url("../images/banner_img.jpg");
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (max-width: 768px) {
+  .box {
+    height: 250px;
+  }
+}
+
+header .profile
+{
+    clear: both;
+    width: 60%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+header .site-title
+{
+    font-size: 1.8rem;
+    line-height: normal;
+}
+header .site-title span
+{
+    font-size: 4.2rem;
+    display: block;
+
+    color: #f6bfbc;
+}
+header .profile-icon
+{
+    margin: 30px auto;
+    -webkit-border-radius: 20%;
+       -moz-border-radius: 20%;
+            border-radius: 20%;
+}
+header p
+{
+    font-size: 1.6rem;
+}
+
+
+/* Contents
+------------------------------------------------------------*/
+
+section {
+  padding: 60px 0; }
+  section .container {
+    width: 90%; }
+  section h2 {
+    font-size: 3.2rem; }
+
+#skills
+{
+    background-color: #99CCCC;
+}
+#skills .container
+{
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-direction: column;
+    flex-direction: column; }
+    
+#skills h2
+{
+    margin-bottom: 60px;
+    color: #fdfcf6;
+}
+#skills .skill-box
+{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-flex: 1;
+            flex: 1;
+    margin: 10px 0;
+    padding: 20px;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+    background-color: #5b7e91;
+}
+#skills i
+{
+    font-size: 4.5rem;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+    padding-top: 15px;
+    text-align: center;
+    color: #fff;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    background-color: #f6bfbc;
+}
+#skills h3
+{
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #f6bfbc;
+}
+
+#contact ul
+{
+    margin-top: 60px;
+    text-align: center;
+}
+#contact ul li
+{
+    font-size: 2.8rem;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            
+    margin-right: 20px;
+    text-align: center;
+    vertical-align: top;
+}
+#contact ul li:last-child
+{
+    margin-right: 0;
+}
+#contact ul a
+{
+    display: block;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+    background-color: #f6bfbc;
+}
+#contact ul a:hover
+{
+    background-color: #f09199;
+}
+
+@media (min-width: 769px) {
+
+ #skills .container {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between; }
+#skills .skill-box {
+    margin: 0 10px; }
+}
